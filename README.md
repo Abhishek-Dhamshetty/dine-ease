@@ -1,11 +1,11 @@
 # Dine Ease
-A full-stack food ordering platform where users can browse, order, and manage food items. The platform includes user authentication, an intuitive dashboard, a seamless ordering experience, and is deployed on free-tier hosting services.
+A full-stack food ordering platform where users can browse, order, and manage food items. The platform includes user authentication using Clerk, an intuitive dashboard, and a seamless ordering experience.
 
 ## Features
 
 ### Frontend
 #### User Authentication
-- Users can register and log in.
+- Users can register and log in using **Clerk Authentication**.
 - Admin authentication with restricted access to manage food items and orders.
 
 #### Food Dashboard
@@ -21,7 +21,7 @@ A full-stack food ordering platform where users can browse, order, and manage fo
 
 ### Backend
 #### Authentication API
-- Secure authentication using JWT for user login and registration.
+- Secure authentication handled by **Clerk Authentication**.
 
 #### Food Management API
 - CRUD operations for food items and order management.
@@ -31,24 +31,25 @@ A full-stack food ordering platform where users can browse, order, and manage fo
 - WebSockets for real-time order status updates and interactions.
 
 ### Database
-- User, food, and order data is stored efficiently in MongoDB or Planetscale.
+- User, food, and order data is stored efficiently in **MongoDB Atlas**.
 
 ## Deployment
 
 ### Frontend Hosting
-- Deployed on **Vercel** or **Netlify** for free-tier hosting.
+- Deployed on **Vercel** for free-tier hosting.
 
 ### Backend Hosting
-- Deployed on **Render** or **Railway.app** for free-tier hosting.
+- Deployed on **Render** for free-tier hosting.
 
 ### Database
-- **MongoDB Atlas** (Free Plan) or **Planetscale** (Free Plan) is used for database hosting.
+- **MongoDB Atlas** (Free Plan) is used for database hosting.
 
 ## Setup Instructions
 
 ### Prerequisites
 - Node.js installed on your machine.
-- MongoDB Atlas or Planetscale account for the database.
+- MongoDB Atlas account for the database.
+- Clerk account for authentication setup.
 
 ### Steps to Run Locally
 1. Clone the repository:
@@ -61,7 +62,7 @@ A full-stack food ordering platform where users can browse, order, and manage fo
    npm install
    ```
 3. Set up environment variables:
-   - Create a `.env` file and configure database and authentication settings.
+   - Create a `.env` file and configure database and Clerk authentication settings.
 
 4. Start the development server:
    ```sh
